@@ -51,10 +51,13 @@
         int a1 = y / 100000;
         int a2 = (y / 100) % 10 ;
         int a3 = y % 10 ;
+        int a4 = (y / 1000) % 10 ;
+        int a5 = (y / 10) % 10 ;
+        int a6 = (y / 10000) % 10 ;
 
-        if (a3 >= 4 && a1 <= 7) {
-            if (30 % a2 == 0) {
-                if (a2 % 3 == 0 && a2 % 2 != 0) {
+        if (30 % a3 == 0) {
+            if (a2 % 3 == 0 && a2 % 2 != 0) {
+                if (a1 == 7 || a2 == 7 || a3 == 7 || a4 == 7 || a5 == 7 || a6 == 7) {
                     Console.WriteLine("true");
                 } else {
                     Console.WriteLine("false");}

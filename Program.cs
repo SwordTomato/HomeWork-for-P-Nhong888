@@ -1,12 +1,12 @@
 ﻿class Program {
 
     static void Main(string[] args) {
+        Console.Write("รหัสผ่าน6หลัก : ");
+        int y = int.Parse(Console.ReadLine());
         Console.Write("หน่วยงานของคุณ : ");
          string x = (Console.ReadLine());
 
     if (x == "CIA") {
-        Console.Write("รหัสผ่าน6หลัก : ");
-        int y = int.Parse(Console.ReadLine());
 
         int y1 = (y / 1000) % 10 ;
         int y2 = (y / 10) % 10 ;
@@ -25,8 +25,6 @@
             Console.WriteLine("false");
         }
     } else if (x == "FBI") {
-       Console.Write("รหัสผ่าน6หลัก : ");
-        int y = int.Parse(Console.ReadLine());
 
         int z1 = y / 100000;
         int z2 = (y / 10000) % 10 ;
@@ -45,8 +43,6 @@
             Console.WriteLine("false");
         }
     } else if (x == "NSA") {
-        Console.Write("รหัสผ่าน6หลัก : ");
-        int y = int.Parse(Console.ReadLine());
 
         int a1 = y / 100000;
         int a2 = (y / 100) % 10 ;

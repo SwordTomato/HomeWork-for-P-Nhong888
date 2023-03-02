@@ -6,6 +6,8 @@
         Console.Write("หน่วยงานของคุณ : ");
          string x = (Console.ReadLine());
 
+    if (y <= 999999 && y >= 100000) {
+        
     if (x == "CIA") {
 
         int y1 = (y / 1000) % 10 ;
@@ -66,5 +68,8 @@
     } else {
         Console.WriteLine("false");
     }
+} else {
+    Console.WriteLine("false");
+}
 }
 }
